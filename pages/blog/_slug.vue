@@ -12,6 +12,11 @@ export default {
     const article = await $content('articles', params.slug).fetch()
 
     return { article }
+  },
+  head() {
+    return {
+      title: this.article.title
+    }
   }
 }
 </script>

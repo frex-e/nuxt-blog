@@ -18,6 +18,11 @@ export default {
       .fetch()
 
     return { articles }
+  },
+  head () {
+    return {
+      title: 'Blog'
+    }
   }
 }
 </script>
